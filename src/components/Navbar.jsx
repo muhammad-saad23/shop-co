@@ -52,7 +52,9 @@ function Navbar({setData}) {
         <nav className='flex flex-row justify-around items-baseline my-2 py-2 animate'>            
           <div className="logo cursor-pointer">
           <Link to="/">
-          <span className='text-5xl tracking-wider' id='logo'>shop.co</span>
+          <span className='text-5xl tracking-wider' id='logo'>ZyraWear
+
+</span>
           </Link>  
           </div>
           <div className={`hidden links md:flex flex-row items-center`}>

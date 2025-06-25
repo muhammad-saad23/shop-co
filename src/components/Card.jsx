@@ -15,7 +15,8 @@ function ProductCard({ product}) {
 
   return (
     <>
-      <div data-aos="fade-up" data-aos-duration="1500" className="bg-white rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
+    <section data-aos="fade-up" data-aos-duration="1500">
+      <div className="bg-white rounded-xl shadow-lg overflow-hidden transition duration-300 ease-in-out hover:scale-105">
         <div className="relative p-4">
           <Link to={`/product/${product.id}`} className='cursor-pointer'><img
             src={product.image_url[1]}
@@ -56,7 +57,7 @@ function ProductCard({ product}) {
 
 
       </div>
-
+      </section>      
       {/* pagination */}
 
     </>
