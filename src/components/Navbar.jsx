@@ -47,14 +47,12 @@ function Navbar({setData}) {
  }
 
   return (
-    <div className='sticky top-0 z-1 bg-white'>
+    <div className='sticky top-[0px] z-1 bg-white'>
       <>
         <nav className='flex flex-row justify-around items-baseline my-2 py-2 animate'>            
           <div className="logo cursor-pointer">
           <Link to="/">
-          <span className='text-5xl tracking-wider' id='logo'>ZyraWear
-
-</span>
+          <span className='text-4xl tracking-wider md:text-5xl' id='logo'>ZyraWear</span>
           </Link>  
           </div>
           <div className={`hidden links md:flex flex-row items-center`}>
@@ -92,7 +90,7 @@ function Navbar({setData}) {
             </button>
           </div>
         </nav>
-         <ResponsiveNav Nav={Nav} closeNav={handleCloseNav}/>
+         <ResponsiveNav filterByCategory={filterByCategory} links={nav} Nav={Nav} closeNav={handleCloseNav}/>
          <SearchBar Search={Search} onClose={handleCloseSearch}/>
          {/* <Card choice={filter}/> */}
       </>
